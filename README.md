@@ -1,10 +1,12 @@
 # Map app
 
-## Hantering av gester och Map Kit
+## Hantering av gester och Map Kit i Swift
 
 Både iPhone och iPad är i grund och botten (multi)touch-enheter. Detta innebär så klart att inmatning till enheterna görs med hjälp av olika fingergester, antingen med en eller flera fingrar. I iOS är det väldigt lätt att hantera gester med hjälp av så kallade gesture recognizers. Det finns färdiga recognizers för de flesta standardmässiga gester, såsom "tap", "swipe" och "pinch". Det går också att utöka med egna subklasser som hanterar andra gester. Detta gör att man med bara några få rader kan hantera till exempel en swipe-rörelse över skärmen utan krångel.
 
 En väldigt vanlig kategori av appar på App Store är sådana som hjälper användaren att hitta diverse geografiska platser. Apple har gjort det enkelt för oss att skapa sådana appar genom att tillhandahålla en färdig vy som sköter interaktion med och nedladdning av kartdata. Denna vy är del i ramverket Map Kit som ni kommer att få testa på i denna uppgift. Ni kommer dessutom lära er hur man kan använda gesture recognizers för att lägga till ytterligare interaktion till existerande vyer, så som till exempel en karta.
+
+Swift är Apple's nya programmerings språk som skiljer sig en del från Objective-C. Swift är ett definierat som ett protokoll orienterat språk. Det betyder att det är den paradigmen som är förespråkat att använda när man skriver sin kod. Men det går fortfarande bra att skriva objekt orienterad kod i Swift för den som inte hunnit lära sig den nya paradigmen än. Denna laboration kommer inte kräva att du demonsterar full kunskap av Swift utan är mer tänkt så du får testa språket.
 
 # Förberedelser
 
@@ -15,6 +17,7 @@ En väldigt vanlig kategori av appar på App Store är sådana som hjälper anv�
 	* [Location and Maps Programming Guide - Getting the User’s Location][getting-the-users-location]
 	* [Location and Maps Programming Guide - Annotating Maps][annotating-maps]
 	* [Event Handling Guide for iOS - Gesture Recognizers][gesture-recognizers]
+	* [The Swift Programming Language][swift-programming-language]
 * Dokumentation
 	* [MKPointAnnotation][point-annotation]
 	* [MKMapView][map-view]
@@ -36,6 +39,8 @@ En väldigt vanlig kategori av appar på App Store är sådana som hjälper anv�
 
 [point-annotation]:https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKPointAnnotation_class/index.html#//apple_ref/occ/cl/MKPointAnnotation
 
+[swift-programming-language]:https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html
+
 [map-view]:https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKMapView_Class/index.html#//apple_ref/occ/cl/MKMapView
 
 [user-tracking-bar-button-item]:https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKUserTrackingBarButtonItemClassRef/index.html#//apple_ref/occ/cl/MKUserTrackingBarButtonItem
@@ -50,7 +55,7 @@ En väldigt vanlig kategori av appar på App Store är sådana som hjälper anv�
 
 #### Frågor
 
-(Inga frågor är märkta för att redovisas till denna uppgift.)
+Inga frågor är märkta för att redovisas till denna uppgift.
 
 1. Den abstrakta basklassen som alla gest-klasser ärver från heter UIGestureRecognizer - vilka konkreta subklasser finns det? Vilken typ av gest motsvarar respektive klass?
 
